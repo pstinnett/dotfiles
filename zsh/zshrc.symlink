@@ -41,3 +41,5 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias ls="ls -aFhlG"
 alias mamp="sudo vim /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf"
 alias hosts="sudo vim /private/etc/hosts"
+
+export EDITOR=subl
