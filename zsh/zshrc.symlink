@@ -43,3 +43,5 @@ alias mamp="sudo vim /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf"
 alias hosts="sudo vim /private/etc/hosts"
 
 export EDITOR=subl
+
+eval "$(rbenv init -)"
