@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+unsetopt correct
 ZSH_CUSTOM=$HOME/.dotfiles/zsh
 
 # Set name of the theme to load.
@@ -26,14 +27,16 @@ ZSH_THEME="pstinnett"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew npm)
+plugins=(git brew npm drush)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/Users/pstinnett/.rbenv/shims:/Users/pstinnett/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/usr/local/share/npm/bin
+export PATH=/usr/local/bin:/Users/pstinnett/.rbenv/shims:/Users/pstinnett/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/usr/local/share/npm/bin:/Users/pstinnett/Development/android-sdk-macosx/sdk/platform-tools:/Users/pstinnett/Development/android-sdk-macosx/sdk/tools
 export NODE_PATH="/usr/local/lib/node"
 export DOTFILES_PATH="~/.dotfiles"
+
+#turn off autocorrect
 
 #alias
 alias zshconfig="vim ~/.zshrc"
@@ -41,7 +44,11 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias ls="ls -aFhlG"
 alias mamp="sudo vim /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf"
 alias hosts="sudo vim /private/etc/hosts"
+alias flushdns="sudo killall -HUP mDNSResponder"
 
 export EDITOR=subl
 
 eval "$(rbenv init -)"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
