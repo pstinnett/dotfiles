@@ -35,6 +35,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/bin:/Users/pstinnett/.rbenv/shims:/Users/pstinnett/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/usr/local/share/npm/bin:/Users/pstinnett/Development/android-sdk-macosx/sdk/platform-tools:/Users/pstinnett/Development/android-sdk-macosx/sdk/tools
 export NODE_PATH="/usr/local/lib/node"
 export DOTFILES_PATH="~/.dotfiles"
+export VAGRANT_HOME="/Volumes/Virtual Machines/vagrant_home/"
 
 #turn off autocorrect
 
