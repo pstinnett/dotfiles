@@ -2,7 +2,7 @@
     "always-semicolon": true,
     "colon-space": [0, 1],
     "color-case": "lower",
-    "color-shorthand": "false",
+    "color-shorthand": false,
     "combinator-space": [1, 1],
     "element-case": "lower",
     "sort-order": [
@@ -283,5 +283,6 @@
         "z-index",
         "zoom",
         "$include"
-    ]
+    ],
+    "stick-brace": 1
 }
