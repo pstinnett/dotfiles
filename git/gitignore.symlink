@@ -18,7 +18,6 @@
 /manage/config.inc.php
 /manage/cache/*
 /assets/images/captchas/*
-/uploads/*
 !/uploads/system/avatars/default_set/*.gif
 !/uploads/system/smileys/*.gif
 /assets/min/cache/*
