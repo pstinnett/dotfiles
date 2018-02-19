@@ -1,2 +1,36 @@
 !.gitignore
 gitconfig.symlink
+
+# Global
+# --------------------------------------------------------
+.DS_Store
+*.todo
+
+# EE 2
+# --------------------------------------------------------
+/system/expressionengine/config/config.inc.php
+/system/expressionengine/cache/*
+/public/assets/min/cache/*
+/public/assets/images/captchas/*
+/public/uploads/*
+!/public/uploads/system/avatars/default_set/*
+!/public/uploads/system/smileys/*.gif
+
+# EE 1.x
+# --------------------------------------------------------
+/manage/config.inc.php
+/manage/cache/*
+/assets/images/captchas/*
+!/uploads/system/avatars/default_set/*.gif
+!/uploads/system/smileys/*.gif
+/assets/min/cache/*
+/manage/bridge/codeigniter/system/cache/*
+
+# Exceptions
+# --------------------------------------------------------
+!index.html
+
+# Extra
+# --------------------------------------------------------
+*.sublime-project
+*.sublime-workspace
